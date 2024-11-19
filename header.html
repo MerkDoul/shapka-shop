@@ -6,3 +6,40 @@
         <li><a href="contact.html">Контакты</a></li>
     </ul>
 </nav>
+<style>
+    /* Стили для навигационного меню */
+    nav {
+        background-color: #333; /* Цвет фона меню */
+        padding: 10px 0; /* Отступ сверху и снизу */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для эффекта выступа */
+        position: relative; /* Для позиционирования */
+        width: 100%; /* Занимает всю ширину */
+        display: flex; /* Используем flex для центрирования */
+        justify-content: center; /* Центрируем содержимое по горизонтали */
+        z-index: 1000; /* Установите высокий z-index, если нужно перекрывать другие элементы */
+    }
+
+    nav ul {
+        list-style-type: none; /* Убираем маркеры списка */
+        margin: 0; /* Убираем отступы */
+        padding: 0; /* Убираем внутренние отступы */
+    }
+
+    nav ul li {
+        display: inline-block; /* Делаем элементы списка строчными */
+        margin: 0 20px; /* Отступы между элементами */
+    }
+
+    nav ul li a {
+        color: white; /* Цвет текста ссылки */
+        text-decoration: none; /* Убираем подчеркивание */
+        padding: 10px; /* Отступы вокруг текста */
+        transition: background-color 0.3s; /* Плавный переход цвета фона */
+    }
+
+    nav ul li a:hover {
+        background-color: #555; /* Цвет фона при наведении */
+        color: #fff; /* Цвет текста при наведении */
+        border-radius: 5px; /* Скругление углов для эффекта при наведении */
+    }
+</style>
